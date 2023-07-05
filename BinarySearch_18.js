@@ -1,4 +1,5 @@
 const array =[4,3,2,1,6,7,8];
+//using recursion
 function binarySearch(array,start,end,key){
     let mid=Math.floor((start+end)/2);
     if(key===array[mid]){
@@ -15,3 +16,7 @@ function binarySearch(array,start,end,key){
     }
 }
 console.log(binarySearch(array,0,array.length,8));
+
+//using indexof operator
+
+console.log(array.indexOf(8));
