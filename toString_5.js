@@ -1,4 +1,4 @@
-const array=new Array("a", "b", "c", "d", "e");
+const array=["Red", "Green", "White", "Black"];
 //using toString method
 console.log(array.toString());
 //using join method
