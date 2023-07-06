@@ -9,9 +9,8 @@ for(let i=0; i<mod.length; i++){
     else{
         result+=mod[i];
     }
-}
+  }
 console.log(result);
-
 //using map method
   const res=mod.map(function (num, index, array) {
     if (array[index] % 2 === 0 && array[index + 1] % 2 === 0) {

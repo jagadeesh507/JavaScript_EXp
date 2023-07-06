@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="text" placeholder="enter number">
+        <input type="button" id="bt1" value="Add" onclick="Add()">
+        <input type="button" id="bt2" value="Display" onclick="display()">
+        <p id="name"></p>
+    </div>
+    <script>
+        const data=new Array();
+        function Add(){
+            data.push(document.getElementById("text").value);
+            document.getElementById("text").value="";
+        }
+        function display(){
+            const newarray=data.map((value)=>`<h1>${value}</h1>`).join('');
+             document.getElementById('name').innerHTML=newarray;
+        }
+    </script>
+</body>
+</html>
