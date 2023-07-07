@@ -1,8 +1,8 @@
 //using reduce
 const isPrinme=(array)=>{
-    return array.reduce((acc,curr,index,arr)=>{
+    return array.reduce((acc,curr)=>{
         if(curr==1||curr>2&&curr%2==0){
-            return false;
+            return  false; 
         }
         return acc;
     },true);

@@ -7,7 +7,7 @@ const unique =(arr,key)=>{
         sum.push(arr[i],arr[j]);
        }
     }
-    return sum;
+   return sum;
 }
-const k=unique(arr,55)
-console.log(k); //not working need to change
+const k=new Set(unique(arr,55));
+console.log(...k);
