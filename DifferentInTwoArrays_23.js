@@ -9,11 +9,11 @@ let arr3=(arr1,arr2)=>
 }
 console.log(arr3(arr1,arr2));
 //using reducer method
-let arr4=(arr1,arr2) => {
+let arr4=() => {
     return arr1.reduce((result,elem)=>{
         if(!arr2.includes(elem)&&!result.includes(elem))
         result.push(elem);
         return result;
     },arr2.filter(elem => !arr1.includes(elem)));
 }
-console.log(arr4(arr1,arr2));
+console.log(arr4());

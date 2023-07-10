@@ -25,4 +25,6 @@ const useresuce=(array)=>array.reduce((countArr,elm,index)=>{
     return countArr;
 },[]);
 console.log(useresuce(array));
+document.querySelector("#output").innerHTML = useresuce([1,2,NaN,3,4,NaN,null,3,NaN]);
+
 

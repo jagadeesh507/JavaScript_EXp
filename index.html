@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Examples</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <h1>JavaScript Examples</h1>
+    <select id="file-selector"></select>
+    <textarea id="editor"></textarea>
+    <button id="run-button">Run</button>
+    <div id="result"></div>
+
+    <script>
+        // Sample code files with their names and URLs
+        const codeFiles = [
+           {
+                name: 'Question 1',
+                url: 'isArray_1.js',
+            },
+           {
+                name: 'Question 2',
+                url: 'ArrayClone_2.js',
+            },
+            {
+                name: 'Question 3',
+                url: 'FirstElement_3.js',
+            },
+            {
+                name: 'Question 4',
+                url: 'LastElement_4.js',
+            },
+            {
+                name: 'Question 5',
+                url: 'toString_5.js',
+            },
+            {
+                name: 'Question 6',
+                url: 'EvenDash_6.js',
+            },
+            {
+                name: 'Question 7',
+                url: 'ArraySort_7.js',
+            },
+            {
+                name: 'Question 8',
+                url: 'ArrayFreq_8.js',
+            },
+            {
+                name: 'Question 9',
+                url: 'CaseSwap_9.js',
+            },
+            {
+                name: 'Question 10',
+                url: 'ArrayElements_10.js',
+            },
+            {
+                name: 'Question 11',
+                url: 'SumOfSquare_11.js',
+            },
+            {
+                name: 'Question 12',
+                url: 'SumAndProduct_12.js',
+            },
+            {
+                name: 'Question 13',
+                url: 'DisplayFromHtml_13.html',
+            },
+            {
+                name: 'Question 14',
+                url: 'UniqueArray_14.js',
+            },
+            {
+                name: 'Question 15',
+                url: 'Oridinal_15.js',
+            },
+            {
+                name: 'Question 16',
+                url: 'LeapYear_16.js',
+            },
+            {
+                name: 'Question 17',
+                url: 'sheffle_17.js',
+            },
+            {
+                name: 'Question 18',
+                url: 'BinarySearch_18.js',
+            },
+            {
+                name: 'Question 19',
+                url: ' AddIndexElements_19.js',
+            },
+            {
+                name: 'Question 20',
+                url: 'DublicateArray_20.js',
+            },
+            {
+                name: 'Question 21',
+                url: 'Flat_21.js',
+            },
+            {
+                name: 'Question 22',
+                url: 'UnionOfTwoArrays_22.js',
+            },
+            {
+                name: 'Question 23',
+                url: 'DifferentInTwoArrays_23.js',
+            },
+            {
+                name: 'Question 24',
+                url: 'OnlyNumbers_24.js',
+            },
+            {
+                name: 'Question 25',
+                url: 'SortArrayOfObjects_25.js',
+            },
+            {
+                name: 'Question 26',
+                url: 'SumPair_26.js',
+            },
+            {
+                name: 'Question 27',
+                url: 'PropertyFromAllElements_27.js',
+            },
+            {
+                name: 'Question 28',
+                url: 'CommonSubString_28.js',
+            },
+            {
+                name: 'Question 29',
+                url: '',
+            },
+            {
+                name: 'Question 30',
+                url: 'MargeArray_30.js',
+            },
+            {
+                name: 'Question 31',
+                url: 'RemoveSpecific_31.js',
+            },
+            {
+                name: 'Question 32',
+                url: 'SpecificElementInArray_32.js',
+            },
+            {
+                name: 'Question 33',
+                url: 'EmptyArray_33.js',
+            },
+            {
+                name: 'Question 34',
+                url: 'NthLargest_34.js',
+            },
+            {
+                name: 'Question 35',
+                url: 'RandomElement_35.js',
+            },
+            {
+                name: 'Question 36',
+                url: 'PrefilledArray_36.js',
+            },
+            {
+                name: 'Question 37',
+                url: 'PrefilledString_37.js',
+            },
+            {
+                name: 'Question 38',
+                url: 'MoveElem_38.js',
+            },
+            {
+                name: 'Question 39',
+                url: 'FilterFalseNull_39.js',
+            },
+            {
+                name: 'Question 40',
+                url: 'IncreaseByOne_40.js',
+            },
+            {
+                name: 'Question 41',
+                url: 'IncreaseByOne_41.js',
+            },
+            {
+                name: 'Question 42',
+                url: 'unique_42.js',
+            },
+            {
+                name: 'Question 43',
+                url: 'UnZip_43.js',
+            },
+            {
+                name: 'Question 44',
+                url: 'ArrayTOObject_44.js',
+            },
+            {
+                name: 'Question 45',
+                url: 'Unique_45.js',
+            },
+            {
+                name: 'Question 46',
+                url: 'permutations_46.js',
+            },
+            {
+                name: 'Question 47',
+                url: 'Removefalse_47.js',
+            },
+            {
+                name: 'Question 48',
+                url: 'PrimeArray_48.js',
+            },
+            {
+                name: 'Question 49',
+                url: 'ThirdSmallest_49.js',
+            },
+            {
+                name: 'Question 50',
+                url: 'MixedSum_50.js',
+            },
+            {
+                name: 'Question 51',
+                url: 'FactorChain_51.js',
+            },
+            {
+                name: 'Question 52',
+                url: 'IsNaNIndex_52.js',
+            },
+            {
+                name: 'Question 53',
+                url: 'NumberOfArrays_53.js',
+            },
+        ];
+
+        // Get the file selector and editor elements
+        const fileSelector = document.getElementById('file-selector');
+        const editor = document.getElementById('editor');
+        const runButton = document.getElementById('run-button');
+        const resultArea = document.getElementById('result');
+
+        // Populate the file selector with code file options
+        codeFiles.forEach((file) => {
+            const option = document.createElement('option');
+            option.value = file.url;
+            option.text = file.name;
+            fileSelector.appendChild(option);
+        });
+
+        // Load the selected file into the editor
+        fileSelector.addEventListener('change', async () => {
+            const selectedFile = codeFiles.find((file) => file.url === fileSelector.value);
+            if(selectedFile.url==="DisplayFromHtml_13.html"){
+                const frame=document.createElement('iframe');
+                frame.src="DisplayFromHtml_13.html";
+                frame.style.width="100%" ;
+                frame.style.height="100";
+                resultArea.append(frame);
+
+            }
+            if (selectedFile) {
+                try {
+                    const response = await fetch(selectedFile.url);
+                    const content = await response.text();
+                    editor.value = content;
+                } catch (error) {
+                    console.error(error);
+                }
+            }
+        });
+
+        // Run the code in the editor when the Run button is clicked
+        runButton.addEventListener('click', () => {
+            const code = editor.value;
+            compileAndRun(code);
+        });
+
+        // Function to compile and run the code
+        function compileAndRun(code) {
+            
+            try {
+                // Capture the console.log output
+                let output = '';
+                console.log = (message) => {
+                    output += message + '\n';
+                };
+                // Execute the JavaScript code
+                eval(code);
+                // Display the output in the result area
+                resultArea.textContent = output;
+            } catch (error) {
+                console.error(error);
+                resultArea.textContent = error.message;
+            }
+        }
+    </script>
+</body>
+</html>
