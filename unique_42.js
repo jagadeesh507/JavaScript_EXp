@@ -1,3 +1,4 @@
+//Write a JavaScript function to find unique elements in two arrays.
 //using set
 const arr1=[1,2,3,4,5,[1,2,3]];
 const arr2=[1,2,3,4,5,[1,2,3,9]];

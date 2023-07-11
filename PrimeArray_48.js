@@ -1,3 +1,4 @@
+// Write a JavaScript program that takes an array of integers and returns false if every number is not prime. Otherwise, return true.
 //using reduce
 const isPrinme=(array)=>{
     return array.reduce((acc,curr)=>{

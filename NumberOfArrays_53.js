@@ -1,3 +1,4 @@
+//Write a JavaScript program to count the number of arrays inside a given array.
 //using reduce method
 const array=[1,[2,3,4],5,4,[5,6],[6,7,8],2,[7,8]];
 const result=(array)=>array.reduce((count,item)=>{

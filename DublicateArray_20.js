@@ -1,3 +1,4 @@
+//Write a JavaScript program to find duplicate values in a JavaScript array.
 const arr=[1,2,4,3,4,5,5,2];
 //using filter method
 const dublicate=(arr)=>arr.filter((val,index)=>arr.indexOf(val)!==index)

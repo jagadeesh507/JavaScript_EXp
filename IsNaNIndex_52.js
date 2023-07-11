@@ -1,3 +1,4 @@
+//Write a JavaScript program to get all the indexes where NaN is found in a given array of numbers and NaN.
 //using loop
 const array=[1,2,NaN,3,4,NaN,null,3,NaN]; // here [,,] also taking as NaN
 const arrNaN=[];
@@ -25,6 +26,5 @@ const useresuce=(array)=>array.reduce((countArr,elm,index)=>{
     return countArr;
 },[]);
 console.log(useresuce(array));
-document.querySelector("#output").innerHTML = useresuce([1,2,NaN,3,4,NaN,null,3,NaN]);
 
 

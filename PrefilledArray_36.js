@@ -1,3 +1,4 @@
+//Write a JavaScript function to create a specified number of elements with a pre-filled numeric value array
 //using fill method
 const array=(len,elm)=>Array(len).fill(elm);
 console.log(array(5,11));

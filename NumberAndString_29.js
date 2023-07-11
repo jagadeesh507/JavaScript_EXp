@@ -1,3 +1,4 @@
+//Write a JavaScript function to fill an array with values (numeric, string with one character) within supplied bounds.
 const fun=(start, end, type)=> {
     var result = [];
     if (typeof start === 'number' && typeof end === 'number') {

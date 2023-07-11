@@ -1,3 +1,4 @@
+//Write a JavaScript program that takes an array with mixed data type and calculates the sum of all numbers
 const sum=(array)=>{
     return array.reduce((count,elem)=>{
         if(typeof elem ==="number"){

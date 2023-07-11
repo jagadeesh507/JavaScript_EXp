@@ -1,3 +1,4 @@
+//Write a JavaScript script to empty an array while keeping the original.
 let arr=['a', 'b', 'c', 'd', 'e'];
 const arr2=['a', 'b', 'c', 'd'];
 const arr3=['a', 'b', 'c', 'd'];

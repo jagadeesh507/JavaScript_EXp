@@ -1,3 +1,4 @@
+//Write a JavaScript program to generate all permutations of an array's elements (including duplicates)
 const permutations = arr => {
     if (arr.length === 1) {
       return [arr];

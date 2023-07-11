@@ -1,3 +1,4 @@
+//Write a JavaScript function to generate an array between two integers of 1 step length.
 const func=(start,end)=>{
     const array=[];
     for(let i=start; i<end; i++){

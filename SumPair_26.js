@@ -1,3 +1,4 @@
+//Write a JavaScript program to find a pair of elements (indices of the two numbers) in a given array whose sum equals a specific target number
 const arr=[30,10,45,32,21,67,87];
 const unique =(arr,key)=>{
     const sum=[];

@@ -1,3 +1,4 @@
+//Write a simple JavaScript program to join all elements of the following array into a string.
 const array=["Red", "Green", "White", "Black"];
 //using toString method
 console.log(array.toString());

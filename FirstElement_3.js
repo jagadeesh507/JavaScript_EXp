@@ -20,4 +20,4 @@
 const res=(Array,len)=>{
     return ((len>0 && Array.length>0) ? Array.slice(0, len) : []);
 }
-console.log(res([1,2,3,4,5,6,7]));
+console.log(res([1,2,3,4,5,6,7],3));

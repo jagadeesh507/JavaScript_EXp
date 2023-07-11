@@ -1,3 +1,4 @@
+//Write a JavaScript program to find the leap years in a given range of years.
 //in array
 const array =[2000,2004,2020,2024,1984, 1988, 1992];
 const array2 = new Array();

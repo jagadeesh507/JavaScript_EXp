@@ -1,3 +1,4 @@
+//Write a JavaScript function to check whether an `input` is an array or not.
 const a=[1,2,3,4];
 const b="ContentQL";
 const c={name:"HELLO",age:10};

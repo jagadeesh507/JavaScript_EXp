@@ -1,3 +1,4 @@
+// Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity).
 //using filter method
 const l=[1, 2, 2, 4, 5, 4, 7, 8, 7, 3, 6];
 const k=l.filter((item,index,arr)=> arr.indexOf(item)===index);
@@ -10,4 +11,4 @@ for(let i=0;i<l.length;i++){
     else
     unique.add(l[i]);
 }
-console.log(...unique)
+console.log([...unique]);

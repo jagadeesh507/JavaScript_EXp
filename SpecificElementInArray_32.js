@@ -1,3 +1,4 @@
+//Write a JavaScript function to find an array containing a specific element.
 const array=new Array(3,8,32,45,12,8);
 //using loop
 const isContain =(array,key)=>{

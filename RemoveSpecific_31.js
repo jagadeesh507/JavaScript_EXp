@@ -1,3 +1,4 @@
+// Write a JavaScript function to remove a specific element from an array.
 const array =[3,4,7,1,56];
 //using filter
 const remElm=(array,key)=>array.filter((elm,index)=>elm!=key);

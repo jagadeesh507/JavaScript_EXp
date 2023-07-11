@@ -1,3 +1,4 @@
+//Write a JavaScript program to flatten a nested (any depth) array. If you pass shallow, the array will only be flattened to a single level.
 const arr=[1, [2], [3, [[4]]],[5,6]];
 //using reduce
 const flatten=(arr,s=false)=>{

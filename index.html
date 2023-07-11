@@ -15,6 +15,11 @@
         // Sample code files with their names and URLs
         const codeFiles = [
            {
+              name:"Select Question",
+              content:"code will be displayed here",
+           },
+           {
+            
                 name: 'Question 1',
                 url: 'isArray_1.js',
             },
@@ -128,7 +133,7 @@
             },
             {
                 name: 'Question 29',
-                url: '',
+                url: 'NumberAndString_29.js',
             },
             {
                 name: 'Question 30',
@@ -244,12 +249,13 @@
 
         // Load the selected file into the editor
         fileSelector.addEventListener('change', async () => {
+            document.getElementById("result").innerHTML="";
             const selectedFile = codeFiles.find((file) => file.url === fileSelector.value);
             if(selectedFile.url==="DisplayFromHtml_13.html"){
                 const frame=document.createElement('iframe');
                 frame.src="DisplayFromHtml_13.html";
                 frame.style.width="100%" ;
-                frame.style.height="100";
+                frame.style.height="100px";
                 resultArea.append(frame);
 
             }
@@ -277,7 +283,7 @@
                 // Capture the console.log output
                 let output = '';
                 console.log = (message) => {
-                    output += message + '\n';
+                    output += JSON.stringify(message) + '\n';
                 };
                 // Execute the JavaScript code
                 eval(code);

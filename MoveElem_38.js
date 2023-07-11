@@ -1,3 +1,4 @@
+//Write a JavaScript function to move an array element from one position to another.
 //using splice 
 const movelm=(arr,from,to)=>{
     const mov=arr.splice(from,1)[0];
